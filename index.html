@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Название Вашего Сайта</title>
+<link rel="stylesheet" href="styles.css"> <!-- Подключение стилей -->
+</head>
+<body>
+<header>
+<h1>Название Вашего Сайта</h1>
+<nav>
+<ul>
+<li><a href="problems.html">Проблема чтения</a></li>
+<li><a href="#" id="solutionsButton">Способы решения</a></li>
+<li><a href="feedback.html">Отзывы</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<div class="content">
+<img src="path_to_your_image.jpg" alt="Описание картинки" id="leftImage">
+<div id="rightText">
+<h2>Ваш текст</h2>
+<p>Здесь ваш основной текст.</p>
+</div>
+</div>
+<div id="solutionMenu" style="display: none;">
+<button onclick="location.href='quizzes.html'">Викторины и квесты</button>
+<button onclick="location.href='discussions.html'">Дискуссии</button>
+<button onclick="location.href='events.html'">Выездные мероприятия</button>
+<button onclick="location.href='visualization.html'">Визуализация</button>
+<button onclick="location.href='bingo.html'">Кинни бинго</button>
+</div>
+</main>
+<script>
+document.getElementById('solutionsButton').onclick = function() {
+var menu = document.getElementById('solutionMenu');
+menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+};
+</script>
+</body>
+</html>
